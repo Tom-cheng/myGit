@@ -7,7 +7,7 @@
 *  Modification history:
 *
 **************************************************************************************/
-#include "libOSI.h"
+
 #include "main_smartHome.h"
 #include "netServer.h"
 

@@ -10,7 +10,7 @@
 #ifndef _NET_SERVER_H
 #define _NET_SERVER_H
 
-#include "libOSI.h"
+#include "type.h"
 
 #define LOCAL_IP_ADDRESS   "192.168.0.123"
 #define NETRET_NOT_SUPPORT  -1

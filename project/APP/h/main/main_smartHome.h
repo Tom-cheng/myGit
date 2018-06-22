@@ -10,7 +10,7 @@
 #ifndef _MAIN_SMART_HOME_H
 #define _MAIN_SMART_HOME_H
 
-#include "libOSI.h"
+#include"type.h"
 
 extern "C"
 {

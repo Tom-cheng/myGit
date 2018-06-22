@@ -4,7 +4,7 @@
 *  Create:			    2017-11-04
 *  Modification history:
 **************************************************************************************/
-#include "libOSI.h"
+
 #include "main_smartHome.h"
 
 #define ZMQ_CUSTOM_PLATFORM_HPP
@@ -317,21 +317,20 @@ void test_multi_connect_same_port (const char *address)
 
 int main (void)
 {
-	OSI_Debug(DLEVEL_ERROR, "[%s:%d]\n", __FUNCTION__, __LINE__);
     setup_test_environment ();
-	OSI_Debug(DLEVEL_ERROR, "[%s:%d]\n", __FUNCTION__, __LINE__);
+
     test_single_connect ("tcp://127.0.0.1:*");
-	OSI_Debug(DLEVEL_ERROR, "[%s:%d]\n", __FUNCTION__, __LINE__);
+
     test_multi_connect ("tcp://127.0.0.1:*");
-	OSI_Debug(DLEVEL_ERROR, "[%s:%d]\n", __FUNCTION__, __LINE__);
+
     test_multi_connect_same_port ("tcp://127.0.0.1:*");
-	OSI_Debug(DLEVEL_ERROR, "[%s:%d]\n", __FUNCTION__, __LINE__);
+
     test_single_connect ("tcp://[::1]:*");
-	OSI_Debug(DLEVEL_ERROR, "[%s:%d]\n", __FUNCTION__, __LINE__);
+
     test_multi_connect ("tcp://[::1]:*");
-	OSI_Debug(DLEVEL_ERROR, "[%s:%d]\n", __FUNCTION__, __LINE__);
+
     test_multi_connect_same_port ("tcp://[::1]:*");
-	OSI_Debug(DLEVEL_ERROR, "[%s:%d]\n", __FUNCTION__, __LINE__);
+
     return 0 ;
 }
 
